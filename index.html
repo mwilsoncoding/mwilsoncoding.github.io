@@ -1,1 +1,58 @@
-hello world
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.1/dist/terminal.min.css" />
+    <style>
+      :root {
+        --global-font-size: 15px;
+        --global-line-height: 1.4em;
+	--global-space: 10px;
+        --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+          serif;
+        --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+          serif;
+        --background-color: #222225;
+        --page-width: 60em;
+        --font-color: #e8e9ed;
+        --invert-font-color: #222225;
+        --secondary-color: #a3abba;
+        --tertiary-color: #a3abba;
+        --primary-color: #62c4ff;
+        --error-color: #ff3c74;
+        --progress-bar-background: #3f3f44;
+        --progress-bar-fill: #62c4ff;
+        --code-bg-color: #3f3f44;
+        --input-style: solid;
+        --display-h1-decoration: none;
+      }
+    </style>
+  </head>
+  <body class="terminal">
+    </br>
+    </br>
+    <div class="container">
+      <div class="terminal-card">
+        <header>
+          <div style="display: flex; justify-content: space-between; width: 50%; margin-left: auto; margin-right: auto;">
+            <a id="email_link" class="icon" href="mailto:contact@maxwilson.dev" rel="noopener noreferrer" target="_blank"><img src="./favicons/emaildark.png" height="32" style="width: 32px !important"></a>
+            <a id="keybase_link" class="icon" href="https://keybase.io/maxwilsoncoding" rel="noopener noreferrer" target="_blank"><img src="./favicons/keybase_dark.png" height="32" style="width: 32px !important"></a>
+            <a id="github_link" class="icon" href="https://github.com/mwilsoncoding" rel="noopener noreferrer" target="_blank"><img src="./favicons/ghdark.png" height="32" style="width: 32px !important"></a>
+            <a id="linkedin_link" class="icon" href="https://linkedin.com/in/miwilson2" rel="noopener noreferrer" target="_blank"><img src="./favicons/linkedin_dark.png" height="32" style="width: 32px !important"></a>
+            <a id="instagram_link" class="icon" href="https://instagram.com/rush.jet" rel="noopener noreferrer" target="_blank"><img src="./favicons/paw_dark.png" height="32" style="width: 32px !important"></a>
+            <a id="twitter_link" class="icon" href="https://twitter.com/maxwdev" rel="noopener noreferrer" target="_blank"><img src="./favicons/twitter_dark.png" height="32" style="width: 32px !important"></a>
+          </div>
+        </header>
+        <div>
+	  <h3 class="logo terminal-prompt">(&#955;x.x).<a href="./">Max Wilson</a></h3>
+          <p>Hey there! I&#39;m an Infrastructure Engineer in Columbus, Ohio.</p>
+          <p><em>All written content on this site is provided under a Creative Commons ShareAlike license. All code is provided under an MIT license unless otherwise stated.</em></p>
+        </div>
+      </div>
+    </div>
+    <script>
+      Array.from(document.getElementsByClassName("icon")).forEach( (icon, _index, icons) => icon.before(icons[Math.floor(Math.random() * icons.length)]) );
+    </script>
+  </body>
+</html>
