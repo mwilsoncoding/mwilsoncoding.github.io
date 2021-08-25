@@ -12,7 +12,7 @@ The document root is the root of the repository.
 
 ## CNAME
 
-This is not part of the site; rather, it is configuration.
+This is not part of the site; it is configuration.
 
 DNS for `maxwilson.dev` points to GitHub Pages servers.
 
