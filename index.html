@@ -1,61 +1,43 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.1/dist/terminal.min.css" />
-    <style>
-      :root {
-        --global-font-size: 15px;
-        --global-line-height: 1.4em;
-	--global-space: 10px;
-        --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-          serif;
-        --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-          serif;
-        --background-color: #222225;
-        --page-width: 60em;
-        --font-color: #e8e9ed;
-        --invert-font-color: #222225;
-        --secondary-color: #a3abba;
-        --tertiary-color: #a3abba;
-        --primary-color: #62c4ff;
-        --error-color: #ff3c74;
-        --progress-bar-background: #3f3f44;
-        --progress-bar-fill: #62c4ff;
-        --code-bg-color: #3f3f44;
-        --input-style: solid;
-        --display-h1-decoration: none;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Wilson - Developer</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
-  <body class="terminal">
-    </br>
-    </br>
-    <div class="container">
-      <div class="terminal-card">
-        <header>
-          <div style="display: flex; justify-content: space-between; width: 50%; margin-left: auto; margin-right: auto;">
-            <a id="email_link" class="icon" href="mailto:contact@maxwilson.dev" rel="noopener noreferrer" target="_blank"><img src="./favicons/emaildark.png" height="32" style="width: 32px !important"></a>
-            <a id="keybase_link" class="icon" href="https://keybase.io/maxwilsoncoding" rel="noopener noreferrer" target="_blank"><img src="./favicons/keybase_dark.png" height="32" style="width: 32px !important"></a>
-            <a id="github_link" class="icon" href="https://github.com/mwilsoncoding" rel="noopener noreferrer" target="_blank"><img src="./favicons/ghdark.png" height="32" style="width: 32px !important"></a>
-            <a id="linkedin_link" class="icon" href="https://linkedin.com/in/miwilson2" rel="noopener noreferrer" target="_blank"><img src="./favicons/linkedin_dark.png" height="32" style="width: 32px !important"></a>
-            <a id="instagram_link" class="icon" href="https://instagram.com/rush.jet" rel="noopener noreferrer" target="_blank"><img src="./favicons/paw_dark.png" height="32" style="width: 32px !important"></a>
-            <a id="twitter_link" class="icon" href="https://twitter.com/maxwdev" rel="noopener noreferrer" target="_blank"><img src="./favicons/twitter_dark.png" height="32" style="width: 32px !important"></a>
-          </div>
-        </header>
+  <body class="dark">
+    <header>
+      <div class="nav">
         <div>
-	  <h2 class="logo terminal-prompt">(&#955;x.x).<a href="./">Max Wilson</a></h2>
-          <h3>Hello world!</h3>
-	  <p>My name is Max. I&#39;m a Developer/Engineer/Programmer in Columbus, Ohio.</p>
-	  <h3>What is this place?</h3>
-	  <p>This is my personal website. At the moment, it's a virtual business card. Stay tuned for a renovation and continued updates!</p>
-          <p><em>All written content on this site is provided under a Creative Commons ShareAlike license. All code is provided under an MIT license unless otherwise stated.</em></p>
+          (&#955;x.x).<a href="./">Max Wilson</a>
+        </div>
+        <div id="socials">
+          <a id="email_link" href="mailto:contact@maxwilson.dev" rel="noopener noreferrer" target="_blank">email</a>
+          <a id="keybase_link" href="https://keybase.io/maxwilsoncoding" rel="noopener noreferrer" target="_blank">keybase</a>
+          <a id="github_link" href="https://github.com/mwilsoncoding" rel="noopener noreferrer" target="_blank">github</a>
+          <a id="linkedin_link" href="https://linkedin.com/in/miwilson2" rel="noopener noreferrer" target="_blank">linkedin</a>
+          <a id="instagram_link" href="https://instagram.com/rush.jet" rel="noopener noreferrer" target="_blank">instagram</a>
         </div>
       </div>
-    </div>
-    <script>
-      Array.from(document.getElementsByClassName("icon")).forEach( (icon, _index, icons) => icon.before(icons[Math.floor(Math.random() * icons.length)]) );
-    </script>
+    </header>
+    <main>
+      <h1 class="float-animation">Hello world!</h1>
+      <p>My name is Max. I&#39;m a Developer/Engineer/Programmer in Columbus, Ohio.</p>
+      <div class="faq">
+        <dl>
+          <dt>What is this place?</dt>
+          <dd>
+            <p>This is a static site linking out to my various public projects and profiles.</p>
+            <p>At the moment, it's little more than a virtual business card. Stay tuned for updates!</p>
+          </dd>
+        </dl>
+      </div>
+    </main>
+    <footer>
+      <p>All written content on this site is provided under a Creative Commons ShareAlike license. All code is provided under an MIT license unless otherwise stated.</p>
+    </footer>
   </body>
 </html>
